@@ -1,11 +1,11 @@
 {
-    "name": "okayinc/telegram_session",
+    "name": "okayinc/stateless_session",
     "description": "Library that allows Telegram Bots to have short term memory without using database access",
     "type": "library",
     "license": "GPL3",
     "autoload": {
         "psr-4": {
-            "Okayinc\\TelegramSession\\": "src/"
+            "Okayinc\\StatelessSession\\": "src/"
         },
     },
     "authors": [
