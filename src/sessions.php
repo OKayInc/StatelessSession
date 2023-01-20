@@ -1,8 +1,8 @@
 <?php
 
-namespace Okayinc;
+namespace OKayInc;
 
-class stateless_session{
+class Stateless_Session{
         public static function start($name){
                 session_id($name);
                 session_name($name);
