@@ -2,7 +2,7 @@
 
 namespace OKayInc;
 
-class Stateless_Session{
+class StatelessSession{
         public static function start($name){
                 session_id($name);
                 session_name($name);
