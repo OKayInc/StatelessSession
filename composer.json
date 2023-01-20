@@ -14,5 +14,6 @@
             "email": "dlucio@okay.com.mx"
         }
     ],
+    "minimum-stability": "dev",
     "require": {}
 }
