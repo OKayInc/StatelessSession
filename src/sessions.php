@@ -1,6 +1,6 @@
 <?php
 
-namespace okayinc;
+namespace Okayinc;
 
 class stateless_session{
         public static function start($name){
