@@ -2,7 +2,7 @@
 
 namespace okayinc;
 
-class telegram_session{
+class stateless_session{
         public static function start($name){
                 session_id($name);
                 session_name($name);
