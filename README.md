@@ -1,4 +1,4 @@
-# stateless_session
+# StatelessSession
 This library that allows Telegram Bots (or any stateless connection) to have short term memory without using database access.
 
 
