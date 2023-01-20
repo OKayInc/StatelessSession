@@ -1,5 +1,5 @@
 {
-    "name": "okayinc/StatelessSession",
+    "name": "okayinc/stateless-session",
     "description": "Library that allows Telegram Bots to have short term memory without using database access",
     "type": "library",
     "license": "GPL-3.0-or-later",
