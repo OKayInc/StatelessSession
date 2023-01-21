@@ -12,20 +12,20 @@ $ composer require okayinc/stateless_session
 
 ```php
 <?php
-use okayinc;
+use OKayInc;
 $session_id = md5($from_user_id.'@'.$chat_id);  // something unique
-okayinc\telegram_session::start($session_id);
+\OKayInc\StatelessSession::start($session_id);
 
 ...
 
 // To restart the session (forget the pass)
-okayinc\telegram_session::reset();
+\OKayInc\StatelessSession::reset();
 
 // To get/remember a value in different HTTP sessions 
-$setup_step = okayinc\telegram_session::get('setup_step');
+$setup_step = \OKayInc\StatelessSession::get('setup_step');
 
 // To set a value
-okayinc\telegram_session::set('setup_step', $value);
+\OKayInc\StatelessSession::set('setup_step', $value);
 ```
 
 Where:
