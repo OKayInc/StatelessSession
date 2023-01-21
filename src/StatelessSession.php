@@ -18,7 +18,7 @@ class StatelessSession{
     *    @return    void
     **/
 
-        public function set( $name , $value ){
+        public static function set( $name , $value ){
                 $_SESSION[$name] = $value;
         }
 
@@ -30,26 +30,26 @@ class StatelessSession{
     *    @return    mixed    Datas stored in session.
     **/
 
-        public function get( $name ){
+        public static function get( $name ){
                 if ( isset($_SESSION[$name])){
                         return $_SESSION[$name];
                 }
                 return null;
     }
 
-        public function isset( $name ){
+        public static function isset( $name ){
                 return isset($_SESSION[$name]);
         }
 
-        public function unset( $name ){
+        public static function unset( $name ){
                 unset( $_SESSION[$name] );
         }
 
-        public function json_encode(){
+        public static function json_encode(){
                 return json_encode($_SESSION);
         }
 
-        public function reset(){
+        public static function reset(){
                 return ($_SESSION = array());
         }
 }
