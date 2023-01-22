@@ -18,7 +18,7 @@ class StatelessSession{
     *    @return    void
     **/
 
-        public static function set( $name , $value ){
+        public static function set($name, $value){
                 $_SESSION[$name] = $value;
         }
 
@@ -26,22 +26,23 @@ class StatelessSession{
     *    Gets datas from the session.
     *    Example: echo $instance->foo;
     *   
-    *    @param    name    Name of the datas to get.
-    *    @return    mixed    Datas stored in session.
+    *    @param    name      Name of the datas to get.
+    *    @param    default   Default value.
+    *    @return   mixed     Datas stored in session.
     **/
 
-        public static function get( $name ){
-                if ( isset($_SESSION[$name])){
+        public static function get($name, $default = null){
+                if (isset($_SESSION[$name])){
                         return $_SESSION[$name];
                 }
-                return null;
-    }
+                return $default;
+        }
 
-        public static function isset( $name ){
+        public static function isset($name){
                 return isset($_SESSION[$name]);
         }
 
-        public static function unset( $name ){
+        public static function unset($name){
                 unset( $_SESSION[$name] );
         }
 
