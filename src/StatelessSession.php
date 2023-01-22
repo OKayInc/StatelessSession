@@ -43,7 +43,7 @@ class StatelessSession{
         }
 
         public static function unset($name){
-                unset( $_SESSION[$name] );
+                unset($_SESSION[$name]);
         }
 
         public static function json_encode(){
